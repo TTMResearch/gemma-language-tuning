@@ -1,0 +1,16 @@
+torch
+transformers
+datasets
+accelerate
+wandb
+pyyaml
+numpy
+pandas
+scikit-learn
+jupyter
+beautifulsoup4
+requests
+tqdm
+loguru
+fake-useragent
+tqdm

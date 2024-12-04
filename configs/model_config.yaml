@@ -1,0 +1,22 @@
+model:
+  name: "google/gemma-2b"
+  language: "afrikaans"
+  max_length: 512
+  batch_size: 8
+  learning_rate: 2e-5
+
+data:
+  sources:
+    - maroela
+    - news24_afr
+  num_pages_per_source: 100
+  save_dir: "data"
+
+training:
+  num_epochs: 3
+  gradient_accumulation_steps: 4
+  warmup_steps: 100
+  lora:
+    r: 8
+    alpha: 32
+    dropout: 0.1
